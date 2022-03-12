@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Calculadora de IMC</title>
+        <link rel="stylesheet" href="calEdi.css">
+        <script type="text/javascript" src="calJs.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    </head>
+    <body>
+        <h1  id="titulo">Medidor de IMC</h1>
+        <div class="disp">
+            <div class="cuadros">
+                <div id="cuadDatP"> 
+                    <p>Ingresa tu peso</p>  
+                </div>
+                <input id="peso" type="number" style="margin-left:125px ;">
+                <div id="cuadDatA"> 
+                    <p>Ingrese tu altura</p>
+                </div>
+                <input id="altura" type="number" style="margin-left:125px ;">
+                <div id="cuadButto">
+                    <button id="buttCalc" onclick="calcularIMC()">Calcular</button>
+                </div>
+                <p  id="ResultadoN" style="margin-left: 210px;" ></p>
+                <p  id="Resultado" style="margin-left: 185px;" ></p>
+            </div>
+            <div class="cuadros">
+                <div id="cuadImg1">
+                <img id="peBaj" src="bajoP.png" style="width: 150px; height: 275px; margin-right: 20px; " >
+                <img src="Pesom.png" style="width: 150px; height: 275px;" >
+                </div>
+                <div id="cuadImg2">
+                <img src="SobreP.png" style="width: 150px; height: 275px; padding-right: 10px;" >
+                <img src="aipo.png" style="width: 150px; height: 275px; padding-right: 10px;" >
+                <img src="SobrepEx.png" style="width: 150px; height: 275px;" >
+                </div>
+            </div>
+            <div class="cuadros"><p></p></div>
+        </div>
+    </body>
+</html>
